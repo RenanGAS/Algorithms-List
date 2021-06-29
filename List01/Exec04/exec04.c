@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    char frase[10] = "The box";
+    char frase[10] = "The Box";
 
     printf("+-------------+\n");
     printf("|             |\n");
