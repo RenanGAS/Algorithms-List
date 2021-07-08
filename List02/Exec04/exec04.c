@@ -3,7 +3,6 @@
 int main(){
     int varInt = 0;
     int i;
-    int j = 2;
 
     printf("\n\t\tTabuada\n\n");
     printf("Digite um número: ");
