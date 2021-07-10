@@ -2,10 +2,10 @@
 
 int main()
 {
-    int a = 0;
-    int b = 3;
-    int c = 5;
-    int d = 2;
+    int a = 9;
+    int b = 10;
+    int c = 0;
+    int d = 1;
     int array[4] = {a, b, c, d};
     int arraysize = sizeof(array)/4;
     int newsize = arraysize;
