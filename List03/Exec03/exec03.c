@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    int n1 = 7;
-    int n2 = 8;
+    int n1 = 6;
+    int n2 = 7;
 
     printf("\nDados os números %d e %d, temos que:\n", n1, n2);
 
