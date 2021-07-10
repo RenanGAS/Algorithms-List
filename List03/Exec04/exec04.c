@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int a = 2020;
+    int a = 2021;
     int div4 = a%4;
     int div100 = a%100;
     int div400 = a%400;
