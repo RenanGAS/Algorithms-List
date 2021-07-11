@@ -11,8 +11,8 @@ int main()
     int newsize = arraysize;
     int i;
     int j;
-    int val = 0;
-    int valnext = 0;
+    int val;
+    int valnext;
 
     printf("\nDados os números (%d, %d, %d, %d), temos que:\n", array[0], array[1], array[2], array[3]);
 
@@ -31,8 +31,7 @@ int main()
         newsize -= 1;
     }
 
-    printf("\n=> Em ordem crescente, obtemos a sequência: (%d, %d, %d, %d)\n", array[0], array[1], array[2], array[3]);
-    printf("=> Sendo o maior número: %d\n\n", array[3]);
+    printf("\n=> O maior número é: %d\n\n", array[3]);
 
     return 0;
 }
