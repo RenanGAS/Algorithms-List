@@ -28,7 +28,7 @@ int digits(int a)
 int main()
 {
     // Escolha para 'a' um número de 1 a 5 dígitos
-    int a = 555555;
+    int a = 38659;
     int b = digits(a);
     int d1 = 0;
     int d2 = 0;
