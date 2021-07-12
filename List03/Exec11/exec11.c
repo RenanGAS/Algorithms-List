@@ -6,9 +6,8 @@ void classLetra(int varChar)
     int wArraySize = sizeof(wArray) / 4;
     int arrayE = 0;
     int vL = 0;
-    int i;
 
-    for (i = 0; i < wArraySize; i++)
+    for (int i = 0; i < wArraySize; i++)
     {
         arrayE = wArray[i];
         if (varChar == arrayE)
