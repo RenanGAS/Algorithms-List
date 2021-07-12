@@ -7,16 +7,14 @@ int main(){
     int array[3] = {a, b, c};
     int arraysize = sizeof(array)/4;
     int newsize = arraysize;
-    int i;
-    int j;
     int val = 0;
     int valnext = 0;
 
     printf("\nDados os números (%d, %d, %d), temos que:\n", array[0], array[1], array[2]);
 
-    for (i = 0; i < arraysize-1; i++)
+    for (int i = 0; i < arraysize-1; i++)
     {
-        for (j = 0; j < newsize; j++)
+        for (int j = 0; j < newsize; j++)
         {
             if (array[j] > array[j + 1])
             {
