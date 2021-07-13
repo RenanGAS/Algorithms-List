@@ -11,7 +11,7 @@ int main(){
         printf("\n=> %d é um número par!\n\n", a);
     }else
     {
-        printf("\n => %d não é um número par.\n\n", a);
+        printf("\n => %d não é um número par!\n\n", a);
     }
     
     return 0;
