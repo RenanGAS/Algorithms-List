@@ -2,26 +2,24 @@
 
 int main()
 {
-    int a = 20;
-    int b = 15;
-    int c = 14;
-    int d = 16;
+    int a = 25;
+    int b = 24;
+    int c = 26;
+    int d = 23;
     int array[4] = {a, b, c, d};
     int arraysize = sizeof(array) / 4;
-    int val;
     int valnext;
     int result;
 
     printf("\nDados os números (%d, %d, %d, %d), temos que:\n", array[0], array[1], array[2], array[3]);
 
-    for (int i = 0; i < arraysize; i++)
+    for (int i = 1; i < arraysize; i++)
     {
-        if (array[i] > array[i + 1])
+        if (array[i] < array[i - 1])
         {
-            val = array[i];
-            valnext = array[i + 1];
-            array[i + 1] = val;
-            array[i] = valnext;
+            valnext = array[i];
+            array[i] = array[i - 1];
+            array[i - 1] = valnext;
         }
     }
 
