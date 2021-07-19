@@ -1,7 +1,9 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
     int varInt = 0;
+    
     printf("\nInforme o número de linhas: ");
     scanf(" %d", &varInt);
 
