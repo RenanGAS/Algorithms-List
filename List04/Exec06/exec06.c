@@ -9,6 +9,11 @@ int main()
     scanf(" %d", &varInt);
     printf("\n");
 
+    if (varInt == 0)
+    {
+        printf("%d = %d\n\n", varInt, varInt);
+    }
+
     for (int i = 1; i <= varInt; i++)
     {
         if (i != varInt)
@@ -20,11 +25,6 @@ int main()
             cont += i;
             printf("%d = %d\n\n", i, cont);
         }
-    }
-
-    if (varInt == 0)
-    {
-        printf("%d = %d\n\n", varInt, varInt);
     }
 
     return 0;
