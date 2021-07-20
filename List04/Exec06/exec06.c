@@ -26,7 +26,6 @@ int main()
     {
         printf("%d = %d\n\n", varInt, varInt);
     }
-    
 
     return 0;
 }
