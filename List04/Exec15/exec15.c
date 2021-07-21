@@ -72,26 +72,42 @@ int main()
     {
         if (array[i] == countC1)
         {
-            printf("\n=>Fulano: %d", array[i]);
+            printf("\nFulano: %d", array[i]);
         }
         else if (array[i] == countC2)
         {
-            printf("\n=>Ciclano: %d", array[i]);
+            printf("\nCiclano: %d", array[i]);
         }
         else if (array[i] == countC3)
         {
-            printf("\n=>Beltrano: %d", array[i]);
+            printf("\nBeltrano: %d", array[i]);
         }
         else if (array[i] == countC4)
         {
-            printf("\n=>Renan: %d", array[i]);
+            printf("\nRenan: %d", array[i]);
         }
     }
 
     printf("\nVotos nulos: %d", vNull);
     printf("\nVotos em branco: %d\n\n", vBlank);
-    printf("--------------------------");
-    printf("\nPresidente da República (2022-2026): %s com %d votos\n\n");
+    printf("--------------------------\n");
 
-        return 0;
+    if (array[3] == countC1)
+    {
+        printf("\nPresidente da República (2022-2026): Fulano com %d votos (adicionado %d voto(s) em branco)\n\n", countC1+vBlank, vBlank);
+    }
+    else if (array[3] == countC2)
+    {
+        printf("\nPresidente da República (2022-2026): Ciclano com %d votos (adicionado %d voto(s) em branco)\n\n", countC2+vBlank, vBlank);
+    }
+    else if (array[3] == countC3)
+    {
+        printf("\nPresidente da República (2022-2026): Beltrano com %d votos (adicionado %d voto(s) em branco)\n\n", countC3+vBlank, vBlank);
+    }
+    else
+    {
+        printf("\nPresidente da República (2022-2026): Renan com %d votos (adicionado %d voto(s) em branco)\n\n", countC4+vBlank, vBlank);
+    }
+    
+    return 0;
 }
