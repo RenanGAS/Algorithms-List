@@ -14,7 +14,7 @@ int is_letter(char ch)
 
 int main()
 {
-    char varChar = ' ';
+    char varChar;
     int r = 0;
 
     printf("\nDigite um caracter: ");
