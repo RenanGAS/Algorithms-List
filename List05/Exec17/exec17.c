@@ -1,22 +1,14 @@
 #include <stdio.h>
 
-int main()
+void read_vector(int n, int vet[n])
 {
-    int vet[] = {};
-    int enter = 1;
-    int n = 0;
+    printf("\nDigite %d elementos para o vetor:\n", n);
 
-    printf("\nDigite valores para um vetor:\n");
-
-    while (enter != 0)
+    for (int i = 0; i < n; i++)
     {
         printf("\n> ");
-        scanf(" %d", &enter);
-
-        vet[n] = enter;
-        n += 1;
+        scanf(" %d", &vet[i]);
     }
-    
 
     printf("\nDado o vetor vet[%d] = {", n);
 
@@ -31,6 +23,32 @@ int main()
             printf(" %d }\n", vet[i]);
         }
     }
+
+    printf("\n=> Temos que em ordem reversa fica:\n\n   => vet[%d]^-1 = {", n);
+
+    for (int i = n-1; i >= 0; i--)
+    {
+        if (i != 0)
+        {
+            printf(" %d,", vet[i]);
+        }
+        else
+        {
+            printf(" %d }\n\n", vet[i]);
+        }
+    }
+}
+
+int main()
+{
+    int n;
+
+    printf("\nDigite o tamanho do vetor: ");
+    scanf(" %d", &n);
+
+    int vet[n];
+
+    read_vector(n, vet);
 
     return 0;
 }
