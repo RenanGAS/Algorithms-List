@@ -19,11 +19,19 @@ int is_prime(int n)
                 }
             }
         }
+        else if (n % i == 0)
+        {
+            r = 0;
+        }
         else
         {
-            if (n % i == 0)
+            for (int i = 11; i < n; i++)
             {
-                r = 0;
+                if ((i * i) == n)
+                {
+                    r = 0;
+                    break;
+                }
             }
         }
     }
