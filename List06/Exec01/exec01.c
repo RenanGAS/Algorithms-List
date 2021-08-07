@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <string.h>
 
 void printString(char str[])
 {
     printf("\n=> \"String\" digitada: ");
 
-    for (int i = 0; str[i] != '\0'; i++)
+    for (int i = 0; i < strlen(str); i++)
     {
         printf("%c", str[i]);
     }
