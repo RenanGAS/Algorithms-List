@@ -15,10 +15,10 @@ void printStringReversed(char str[])
 
 int main()
 {
-    char string[] = " ";
+    char string[100];
 
     printf("\nDigite algo do tipo \"String\": ");
-    scanf(" %s", &string);
+    scanf(" %s", string);
 
     printStringReversed(string);
 
