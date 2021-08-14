@@ -31,6 +31,8 @@ void initRandom(int rows, int cols, int m[rows][cols], int min, int max)
             }
         }
     }
+
+    printf("\n\n");
 }
 
 int main()
