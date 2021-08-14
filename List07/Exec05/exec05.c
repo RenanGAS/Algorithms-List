@@ -26,6 +26,8 @@ void initValues(int rows, int cols, int m[rows][cols], int start, int step)
             }
         }
     }
+
+    printf("\n\n");
 }
 
 int main()
