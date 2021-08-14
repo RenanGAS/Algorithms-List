@@ -29,6 +29,8 @@ int maxLine(int rows, int cols, int m[rows][cols])
         {
             maxSum = sum1;
         }
+
+        sum1 = 0;
     }
 
     return maxSum;
@@ -36,10 +38,10 @@ int maxLine(int rows, int cols, int m[rows][cols])
 
 int main()
 {
-    int mat[3][4] = {{1, 3, 100, 6}, {-5, 1, 38, 3}, {9, -1, 200, 5}};
+    int mat[4][4] = {{1,2,3,4}, {4,3,2,8}, {5,4,3,2},{1,3,4,10}};
     int r = 0;
 
-    r = maxLine(3, 4, mat);
+    r = maxLine(4, 4, mat);
 
     printf("\n=> Maior soma: %d\n\n", r);
 
