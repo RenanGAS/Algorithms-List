@@ -28,8 +28,8 @@ void switchDiagonals(int d, int m1[d][d])
                     if ((i != 0) && (i != d - 1) && i == j)
                     {
                         aux = m1[i][j - (d - 3)];
-                        m1[i][j - (d - 3)] = m1[i][j];
-                        m1[i][j] = aux;
+                        m1[i][j - (d - 3)] = m1[i][j]; // bug
+                        m1[i][j] = aux; 
                     }
                 }
                 else
