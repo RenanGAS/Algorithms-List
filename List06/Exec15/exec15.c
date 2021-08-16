@@ -1,11 +1,10 @@
 #include <stdio.h>
 
-void intToString(int number, char converted[])
+void intToString(long int number, char converted[])
 {
     int j = 0;
-    int stop = 1;
 
-    while (stop)
+    while (number)
     {
         for (int i = 48; i < 58; i++)
         {
@@ -15,19 +14,25 @@ void intToString(int number, char converted[])
             }
         }
 
-        j += 1;
+        j++;
         number = number / 10;
-        stop = number;
     }
 }
 
 int main()
 {
-    char num[11];
+    char num[10];
+    // int j = 0;
 
-    intToString(512, num);
+    intToString(5123646, num);
+
+    // for (int i = 48; i < 58; i++)
+    // {
+    //     num[j] = (char)i;
+    //     j++;
+    // }
 
     printf("\n=> %s\n\n", num);
-
+    
     return 0;
 }
