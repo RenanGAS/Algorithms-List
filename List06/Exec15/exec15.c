@@ -1,38 +1,58 @@
 #include <stdio.h>
+#include <string.h>
 
 void intToString(long int number, char converted[])
 {
-    int j = 0;
+    char aux[10];
 
-    while (number)
+    for (int i = 0; i < 10; i++)
     {
-        for (int i = 48; i < 58; i++)
+        if (number)
         {
-            if (number % 10 == (i - 48))
+            for (int j = 48; j < 58; j++)
             {
-                converted[j] = (char)i;
+                if (number % 10 == (j - 48))
+                {
+                    aux[i] = (char)j;
+                    break;
+                }
             }
-        }
 
-        j++;
-        number = number / 10;
+            number = number / 10;
+        }
+    }
+
+    int l = strlen(aux) - 1;
+
+    for (int i = 0; i < 10; i++)
+    {
+        if (l >= 0)
+        {
+            for (int j = 48; j < 58; j++)
+            {
+                if (aux[l] == (char)j)
+                {
+                    converted[i] = aux[l];
+                    break;
+                }
+            }
+
+            l--;
+        }
+        else
+        {
+            converted[i] = '\0';
+        }
     }
 }
 
 int main()
 {
     char num[10];
-    // int j = 0;
 
-    intToString(5123646, num);
-
-    // for (int i = 48; i < 58; i++)
-    // {
-    //     num[j] = (char)i;
-    //     j++;
-    // }
+    intToString(512, num);
 
     printf("\n=> %s\n\n", num);
-    
+
     return 0;
 }
